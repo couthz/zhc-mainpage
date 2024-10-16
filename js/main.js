@@ -34,6 +34,42 @@
 
   	}, 100);
 
+	/*---------------------------------------------------- */
+	/* 微信二维码功能
+	------------------------------------------------------ */
+	$(document).ready(function() {
+	    // 点击微信图标时显示或隐藏二维码
+	    $('#wechat-icon').on('click', function() {
+	        $('#wechat-qrcode').fadeToggle(); // 切换显示和隐藏
+	    });
+
+	    // 点击页面其他部分时，隐藏二维码
+	    $(document).on('click', function(event) {
+	        if (!$(event.target).closest('#wechat-icon, #wechat-qrcode').length) {
+	            $('#wechat-qrcode').fadeOut(); // 如果点击的不是图标或二维码，隐藏二维码
+	        }
+	    });
+
+	});
+
+	$(document).ready(function() {
+	    // 点击微信图标时显示或隐藏二维码
+	    $('#footer-wechat-icon').on('click', function() {
+	        $('#footer-wechat-qrcode').fadeToggle(); // 切换显示和隐藏
+	    });
+
+	    // 点击页面其他部分时，隐藏二维码
+	    $(document).on('click', function(event) {
+	        if (!$(event.target).closest('#footer-wechat-icon, #footer-wechat-qrcode').length) {
+	            $('#footer-wechat-qrcode').fadeOut(); // 如果点击的不是图标或二维码，隐藏二维码
+	        }
+	    });
+
+	});
+
+
+
+
 
 	/*---------------------------------------------------- */
 	/* FitVids
