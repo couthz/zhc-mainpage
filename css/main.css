@@ -1850,6 +1850,8 @@ header .logo a {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+	/* background: rgba(0, 0, 0, 0.5); */
+
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	-webkit-transition: all 0.5s ease-in-out;
@@ -1889,8 +1891,8 @@ header .logo a {
 #portfolio .folio-item .item-wrap {
 	padding: 20px;
     border: 1px solid transparent; /* 基础蓝色边框 */
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1), /* 内发光，青色 */
-                        0 0 30px rgba(0, 0, 0, 0.2);     /* 外发光，青色 */
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.15), /* 内发光，青色 */
+                        0 0 40px rgba(0, 0, 0, 0.25);     /* 外发光，青色 */
     transition: box-shadow 0.4s ease; /* 动画效果 */
 	overflow: hidden; /* 截取超出的部分 */
 }
